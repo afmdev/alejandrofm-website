@@ -3,3 +3,8 @@
  Version:        1.0.1
  Website:  alejandrofm.com
 */
+
+body .et_pb_button {
+	padding: 10px 30px;
+	font-weight: 300;
+}
