@@ -33,9 +33,11 @@ header#main-header {
 	font-weight: 600;
 }
 
+
+
+
+
 /* Animation Keyframes */
-
-
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -75,5 +77,29 @@ header#main-header {
 
 	100% {
 		background-position: 0% 50%
+	}
+}
+
+@keyframes run {
+	0% {
+		left: 0;
+	}
+
+	50% {
+		left: calc(100% - 100px);
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
 	}
 }
