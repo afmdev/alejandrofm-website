@@ -8,3 +8,72 @@ body .et_pb_button {
 	padding: 10px 30px;
 	font-weight: 300;
 }
+
+header#main-header {
+	box-shadow: 0 7px 20px 0px #0000000a;
+}
+
+
+
+
+
+/* Grandient Animation h2 (Home Title)*/
+
+.grandient h2 span {
+	display: inline-block;
+	background-image: linear-gradient(-45deg, #1743df, #994fdd, #e15594, #00ffb2) !important;
+	background-size: 300% !important;
+	background-clip: text;
+	-webkit-background-clip: text;
+	text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: Gradient 10s ease infinite !important;
+	-moz-animation: Gradient 10s ease infinite !important;
+	animation: Gradient 10s ease infinite !important;
+	font-weight: 600;
+}
+
+/* Animation Keyframes */
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
