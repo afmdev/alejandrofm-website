@@ -14,6 +14,95 @@ header#main-header {
 }
 
 
+.et_pb_menu__wrap,
+.et_pb_menu__menu {
+	display: none !important;
+}
+
+.scroll-images p img {
+	width: 500px;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.moove-gdpr-branding-cnt {
+	display: none;
+}
+
+.badge {
+	text-transform: uppercase;
+	font-variation-settings: 'wght' 800;
+	font-size: 10px;
+	padding: 3px 5px;
+	border-radius: 4px;
+	letter-spacing: .05em;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.badge-magenta {
+	background-color: #FFE5F4;
+	color: #CC0078;
+}
+
+.badge-aqua {
+	background-color: #C7F5EB;
+	color: #0E8161;
+}
+
+.badge-success {
+	background: #d2fbd0;
+	color: #0d5f07
+}
+
+.badge-danger {
+	background-color: #fbd0da;
+	color: #5f071c
+}
+
+.badge-warning {
+	background-color: #fbf5d0;
+	color: #5f5207
+}
+
+.badge-magenta {
+	background-color: #FFE5F4;
+	color: #CC0078
+}
+
+.badge-green {
+	background-color: #CFF6CC;
+	color: #0B9200
+}
+
+.badge-aqua {
+	background-color: #C7F5EB;
+	color: #0E8161
+}
+
+
+.btn-sidebyside .et_pb_button_module_wrapper,
+.btn-sidebyside .et_pb_text {
+	display: inline-block;
+}
+
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon,
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton {
+	border: 2px solid #1743df;
+}
+
+
+.link {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer !important;
+	transition: color .1s
+}
+
+.et-l--footer ul {
+	padding: 0;
+}
 
 
 
@@ -31,6 +120,109 @@ header#main-header {
 	-moz-animation: Gradient 10s ease infinite !important;
 	animation: Gradient 10s ease infinite !important;
 	font-weight: 600;
+}
+
+#inner-page p a,
+.single-post .post p a {
+	background-image: linear-gradient(120deg, #ff5ba7 0%, #ff5ba7 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+	background-position: 0 100%;
+	transition: background-size 0.25s ease-in-out;
+	color: inherit !important;
+	font-weight: 400;
+}
+
+
+#inner-page p a:hover,
+.single-post .post p a:hover {
+	background-size: 100% 100%;
+	color: #ffffff !important;
+	transition: ease all .3s;
+	border-bottom: 0 !important;
+}
+
+
+#pot {
+	bottom: 15%;
+	position: absolute;
+	-webkit-animation: linear infinite;
+	-webkit-animation-name: run;
+	-webkit-animation-duration: 200s;
+}
+
+
+
+.sue-highlight-text-uno {
+	text-decoration: none;
+	box-shadow: inset 0 -.5em 0 #feeb8e;
+	color: inherit;
+}
+
+.sue-highlight-text-dos {
+	text-decoration: none;
+	box-shadow: inset 0 -.5em 0 #d0e2ff;
+	color: inherit;
+}
+
+.sue-highlight-text-tres {
+	text-decoration: none;
+	box-shadow: inset 0 -.5em 0 #bff3f1;
+	color: inherit;
+}
+
+.sue-highlight-text-cuatro {
+	text-decoration: none;
+	box-shadow: inset 0 -.5em 0 #fff4c0;
+	color: inherit;
+}
+
+
+.marquee {
+	position: relative;
+	width: 100vw;
+	max-width: 100%;
+	height: 150px;
+	overflow-x: hidden;
+	font-family: 'Poppins';
+	padding-top: 35px;
+}
+
+.slow-lane {
+	position: absolute;
+	white-space: nowrap;
+	will-change: transform;
+	animation: marquee 200s linear infinite;
+}
+
+
+
+.home .dica-container .et_pb_button_wrapper {
+	margin-top: 30px !important;
+}
+
+.home .dica-image-container span img {
+	border-radius: 10px;
+}
+
+
+.swiper-pagination-bullet {
+	width: 15px !important;
+	height: 15px !important;
+	margin: 15px 0 !important;
+}
+
+.dica_divi_carousel .swiper-pagination-bullet {
+	margin-right: 15px !important;
+}
+
+.swiper-pagination.dica-paination-1.swiper-pagination-clickable.swiper-pagination-bullets span:last-child {
+	margin-right: 0px !important;
+}
+
+
+.alejandro-cv span img {
+	height: 175vh !important;
 }
 
 
