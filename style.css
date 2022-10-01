@@ -35,6 +35,147 @@ header#main-header {
 
 
 
+/* Contact Form Styles */
+
+.dvppl_cf7_styler_0 .dipe-cf7 .wpcf7-acceptance input[type="checkbox"]+span:before,
+.dvppl_cf7_styler_0 .dipe-cf7 .wpcf7-checkbox input[type="checkbox"]+span:before {
+	background-color: #f5f5f500 !important;
+}
+
+
+span.wpcf7-not-valid-tip {
+	color: #ff0000;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.wpcf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 0;
+	line-height: 15px;
+}
+
+#alles span.wpcf7-not-valid-tip,
+#right span.wpcf7-not-valid-tip,
+#left span.wpcf7-not-valid-tip {
+	margin-bottom: -29px;
+}
+
+#alles label span,
+#right label span,
+#left label span {
+	color: #ff0000;
+	font-weight: 300;
+}
+
+span.wpcf7-list-item-label {
+	font-weight: 300;
+	font-size: 12px;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+	margin-top: 30px !important;
+}
+
+body #page-container .et_pb_section .dvppl_cf7_styler_0 .wpcf7-form input[type=submit] {
+	font-weight: 300;
+	box-shadow: 0px 6px 3px 0px #00000005;
+}
+
+body #page-container .et_pb_section .dvppl_cf7_styler_0 .wpcf7-form input[type=submit]:hover {
+	background: white !important;
+	color: #1743DF;
+}
+
+.dvppl_cf7_styler_0 {
+	padding-bottom: 0 !important;
+}
+
+input.text,
+input.title,
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text],
+select,
+textarea {
+	border: 1px solid #fff;
+	color: #4e4e4e;
+	box-shadow: 0px 6px 3px 0px #00000005;
+}
+
+.wpcf7-spinner {
+	display: flex;
+	padding: 15px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	border-color: #ffb900;
+	font-size: 13px;
+	border-radius: 100px;
+	background: #ffb90038;
+	text-align: center !important;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+	border-color: #46b450;
+	background: #46b45066;
+	font-size: 13px;
+	text-align: center !important;
+	border-radius: 100px;
+}
+
+body #page-container .et_pb_section .dvppl_cf7_styler_0 .wpcf7-form input[type=submit] {
+	width: 100%;
+}
+
+
+textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+	border-radius: 20px !important;
+}
+
+
+#alles {
+	width: 100%;
+	margin-bottom: 30px !important;
+	margin-top: 10px;
+}
+
+#left {
+	width: 49%;
+	float: left;
+	margin-right: 2%;
+	margin-top: 10px;
+}
+
+#right {
+	width: 49%;
+	float: left;
+	margin-top: 10px;
+}
+
+.clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+
 
 
 /* Animation Keyframes */
@@ -101,5 +242,96 @@ header#main-header {
 
 	to {
 		transform: translateX(-50%);
+	}
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1500px) {
+	.alejandro-cv span img {
+		height: 130vh !important;
+	}
+}
+
+
+@media (max-width: 1300px) {
+	.alejandro-cv span img {
+		height: 130vh !important;
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.alejandro-cv span img {
+		height: 110vh !important;
+	}
+}
+
+@media (max-width: 980px) {
+	.scroll-images p img {
+		width: 400px;
+		border-radius: 10px;
+		margin-right: 20px;
+	}
+
+	.alejandro-cv span img {
+		height: 100vh !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.scroll-images p img {
+		width: 250px;
+		border-radius: 10px;
+		margin-right: 20px;
+	}
+
+	.alejandro-cv span img {
+		height: 85vh !important;
+	}
+
+	#left {
+		width: 100%;
+	}
+
+	#right {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 600px) {
+
+	.alejandro-cv span img {
+		height: 65vh !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.swiper-pagination-bullet {
+		width: 15px !important;
+		height: 15px !important;
+		margin: 15px 0 !important;
+	}
+
+	.dica_divi_carousel .swiper-pagination-bullet {
+		margin-right: 15px !important;
+	}
+
+	.alejandro-cv span img {
+		height: 45vh !important;
+	}
+}
+
+@media (max-width: 320px) {
+	.swiper-pagination-bullet {
+		width: 12px !important;
+		height: 12px !important;
+		margin: 15px 0 !important;
+	}
+
+	.dica_divi_carousel .swiper-pagination-bullet {
+		margin-right: 15px !important;
 	}
 }
