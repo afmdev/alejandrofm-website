@@ -9,10 +9,24 @@ body .et_pb_button {
 	font-weight: 300;
 }
 
-header#main-header {
+/* header#main-header {
 	box-shadow: 0 7px 20px 0px #0000000a;
+} */
+
+
+span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
+	background: #00000014;
+	border-radius: 60px;
+	width: 41px;
+	height: 41px;
+	padding: 5px 0px 0px 5px;
 }
 
+.mobile_menu_bar:after,
+.mobile_menu_bar:before,
+.et_toggle_slide_menu:after {
+	color: #222222 !important;
+}
 
 .et_pb_menu__wrap,
 .et_pb_menu__menu {
