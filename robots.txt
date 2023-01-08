@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /wp-content/uploads/
+Disallow: /wp-admin/
+Disallow: /readme.html
+Disallow: /refer/
+Disallow: /*blackhole
+Disallow: /?blackhole
+ 
+Sitemap: http://www.alejandrofm.com/post-sitemap.xml
+Sitemap: http://www.alejandrofm.com/page-sitemap.xml
+

@@ -1,8 +1,17 @@
 /*
- Theme Name:     alejandrofm child
- Version:        1.0.1
- Website:  alejandrofm.com
+ Theme Name:     alejandro-child
+ Theme URI:      https://www.alejandrofm.com
+ Description:    Alejandro Child Theme
+ Author:         Alejandro Francisco Marrero
+ Author URI:     https://www.alejandrofm.com.com
+ Template:       Divi
+ Version:        1.0.0
 */
+
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
 
 body .et_pb_button {
 	padding: 10px 30px;
@@ -122,6 +131,10 @@ span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
 
 /* Grandient Animation h2 (Home Title)*/
 
+.grandient.two h2 span {
+	font-weight: 900;
+}
+
 .grandient h2 span {
 	display: inline-block;
 	background-image: linear-gradient(-45deg, #1743df, #994fdd, #e15594, #00ffb2) !important;
@@ -130,13 +143,17 @@ span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
 	-webkit-background-clip: text;
 	text-fill-color: transparent;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: Gradient 10s ease infinite !important;
-	-moz-animation: Gradient 10s ease infinite !important;
-	animation: Gradient 10s ease infinite !important;
+	-webkit-animation: Gradient 5s ease infinite !important;
+	-moz-animation: Gradient 5s ease infinite !important;
+	animation: Gradient 5s ease infinite !important;
 	font-weight: 600;
 }
 
+
+
 #inner-page p a,
+.autor a,
+.post-meta a,
 .single-post .post p a {
 	background-image: linear-gradient(120deg, #ff5ba7 0%, #ff5ba7 100%);
 	background-repeat: no-repeat;
@@ -149,6 +166,8 @@ span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
 
 
 #inner-page p a:hover,
+.autor a:hover,
+.post-meta a:hover,
 .single-post .post p a:hover {
 	background-size: 100% 100%;
 	color: #ffffff !important;
@@ -380,6 +399,51 @@ textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
 	display: block;
 }
 
+
+.et_pb_posts .et_pb_post {
+	position: relative;
+	background: #fff !important;
+	border-radius: 10px !important;
+}
+
+
+.et_pb_posts .et_pb_post h2,
+.et_pb_posts .et_pb_post .post-meta,
+.et_pb_posts .et_pb_post .post-content {
+	padding: 0px 30px;
+}
+
+a.more-link {
+	width: 165px;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: #1743df;
+	border: 2px solid #1743df;
+	border-radius: 50px;
+	letter-spacing: -1px;
+	transition: all 300ms ease 0ms;
+	padding: 11px 5px;
+	font-weight: 200;
+	text-transform: capitalize;
+}
+
+a.more-link:hover {
+	color: #1743df;
+	background-color: #ffffff;
+	border: 2px solid #1743df;
+
+}
+
+.blog .post img {
+	transition: all 500ms ease 0ms;
+}
+
+.post:hover .blog-image {
+	transform: scale(1.05);
+}
 
 
 
