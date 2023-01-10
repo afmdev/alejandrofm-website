@@ -15,7 +15,7 @@ if ( empty( $comments_by_type ) ) {
 
 <section id="comment-wrap">
 <?php if ( have_comments() && ! empty( $comments_by_type['comment'] ) ) : ?>
-	<span id="comments" class="page_title"><?php comments_number( esc_html__( '0 Comments', 'Divi' ), esc_html__( '1 Comment', 'Divi' ), '% ' . esc_html__( 'Comments', 'Divi' ) ); ?></span>
+	<h1 id="comments" class="page_title"><?php comments_number( esc_html__( '0 Comments', 'Divi' ), esc_html__( '1 Comment', 'Divi' ), '% ' . esc_html__( 'Comments', 'Divi' ) ); ?></h1>
 <?php endif; ?>
 	<?php if ( have_comments() ) : ?>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
@@ -40,7 +40,7 @@ if ( empty( $comments_by_type ) ) {
 
 		<?php if ( ! empty($comments_by_type['pings']) ) : ?>
 			<div id="trackbacks">
-				<span id="trackbacks-title"><?php esc_html_e('Trackbacks/Pingbacks','Divi'); ?></span>
+				<h3 id="trackbacks-title"><?php esc_html_e('Trackbacks/Pingbacks','Divi'); ?></h3>
 				<ol class="pinglist">
 					<?php wp_list_comments('type=pings&callback=et_list_pings'); ?>
 				</ol>

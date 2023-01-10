@@ -155,7 +155,8 @@ span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
 .autor a,
 .et_pb_blog_0_tb_body .et_pb_post .post-meta a,
 .single-post .post p a,
-a.comment-edit-link {
+a.comment-edit-link,
+.single-post .post-content a {
 	background-image: linear-gradient(120deg, #ff5ba7 0%, #ff5ba7 100%);
 	background-repeat: no-repeat;
 	background-size: 100% 2px;
@@ -170,7 +171,8 @@ a.comment-edit-link {
 .autor a:hover,
 .et_pb_blog_0_tb_body .et_pb_post .post-meta a:hover,
 .single-post .post p a:hover,
-a.comment-edit-link:hover {
+a.comment-edit-link:hover,
+.single-post .post-content a:hover {
 	background-size: 100% 100%;
 	color: #ffffff !important;
 	transition: ease all .3s;
@@ -434,15 +436,49 @@ a.more-link {
 	text-transform: capitalize;
 }
 
+.column.size-1of3 article,
+.column.size-1of2 article,
+.column.size-1of1 article {
+	transition: all 300ms ease 0ms;
+}
+
+.column.size-1of3 article:hover,
+.column.size-1of2 article:hover,
+.column.size-1of1 article:hover {
+	box-shadow: 0 20px 30px -10px rgb(9 30 67 / 30%);
+}
+
 a.more-link:hover {
 	color: #1743df;
 	background-color: #ffffff;
 	border: 2px solid #1743df;
+}
+
+.blog-top-bar {
+	width: 100%;
+	height: 20px;
+}
+
+.blog-top-bar .sharing {
+	float: left;
+}
+
+.blog-top-bar .views {
+	display: flex;
+	float: right;
+	align-items: flex-end;
 
 }
 
 .blog .post img {
 	transition: all 500ms ease 0ms;
+}
+
+.blog-separator {
+	width: 100%;
+	height: 1px;
+	background-color: #d7d7d7;
+	margin-top: -7px;
 }
 
 .post:hover .blog-image {
@@ -479,12 +515,144 @@ a.comment-edit-link {
 	font-size: 14px;
 }
 
+h1#comments {
+	margin-bottom: 20px;
+}
+
 .comment-body {
 	margin-bottom: -10px;
 }
 
+#respond {
+	padding-top: 50px;
+}
+
+span.nav-next a,
+span.nav-previous a {
+	background: #1743df !important;
+	color: #F2F2F2;
+	padding: 0px 20px;
+	border-radius: 80px;
+	font-size: 14px;
+	border: 2px solid #1743df;
+	transition: all 300ms ease 0ms;
+}
+
+span.nav-next a:hover,
+span.nav-previous a:hover {
+	background: #F2F2F2 !important;
+	border: 2px solid #1743df;
+	color: #1743df;
+}
+
+a.buy-me-coffee img {
+	width: 14px !important;
+	padding: 3px 0px 0px 0 !important;
+	margin-left: 12px !important;
+}
+
+a.buy-me-coffee img:hover {
+	animation: shake 1s ease 0s 1 normal both;
+	transform: translate3d(0, 0, 0);
+}
+
+.post-views.content-post.post-528.entry-meta {
+	color: #cc0000;
+	font-weight: 300;
+	font-size: 16px;
+
+}
+
+.views span {
+	color: #cc0000;
+	font-weight: 300;
+	font-size: 14px;
+	margin-left: 4px;
+}
+
+.post-views.entry-meta>span.post-views-icon.dashicons {
+	margin-top: 1px;
+}
+
+span.post-views-count {
+	margin: 0 0 0 -3px;
+}
+
+.blog-categories span a {
+	background: #df1798;
+	border-radius: 4px;
+	padding: 2px 5px;
+	font-size: 11px;
+	font-weight: 400;
+	color: #fff;
+	border: 1px solid #df1798;
+	transition: all 300ms ease 0ms;
+}
+
+.blog-categories span a:hover {
+	background: #F2F2F2;
+	color: #df1798;
+	border: 1px solid #df1798;
+}
+
+.simplesocial-simple-icons button.ssb_fbshare-icon {
+	padding: 0px 8px 0 3px !important;
+	border-radius: 4px !important;
+}
+
+.simplesocial-simple-icons button.ssb_print-icon,
+.simplesocial-simple-icons button.ssb_email-icon,
+.simplesocial-simple-icons button.ssb_whatsapp-icon,
+.simplesocial-simple-icons button.ssb_tweet-icon {
+	padding: 0px 8px 0 7px !important;
+	border-radius: 4px !important;
+}
+
+.simplesocial-simple-icons button.ssb_print-icon .icon,
+.simplesocial-simple-icons button.ssb_email-icon .icon,
+.simplesocial-simple-icons button.ssb_whatsapp-icon .icon {
+	left: 6px !important;
+}
+
+.simplesocial-simple-icons button.ssb_linkedin-icon .simplesocialtxt {
+	padding: 0 7px 0 22px !important;
+}
 
 /* Animation Keyframes */
+
+@keyframes shake {
+
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -604,6 +772,11 @@ a.comment-edit-link {
 	#right {
 		width: 100%;
 	}
+
+	button.ssb_print-icon.simplesocial-email-share,
+	button.ssb_whatsapp-icon.simplesocial-whatsapp-share {
+		display: none
+	}
 }
 
 
@@ -611,6 +784,22 @@ a.comment-edit-link {
 
 	.alejandro-cv span img {
 		height: 65vh !important;
+	}
+}
+
+
+@media (max-width: 580px) {
+
+
+	button.ssb_linkedin-icon {
+		display: none
+	}
+}
+
+@media (max-width: 450px) {
+
+	button.ssb_email-icon.simplesocial-email-share {
+		display: none;
 	}
 }
 
