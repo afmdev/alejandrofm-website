@@ -992,16 +992,6 @@ class custom_ET_Builder_Module_Blog extends ET_Builder_Module_Type_PostBased {
 
 							<?php
 							if ( 'on' === $args['show_author'] || 'on' === $args['show_date'] || 'on' === $args['show_categories'] || 'on' === $args['show_comments'] ) {
-
-								$date = 'on' === $args['show_date']
-									? et_get_safe_localization( sprintf( __( '%s', 'et_builder' ), '<span class="published">' . esc_html( get_the_date( str_replace( '\\\\', '\\', $args['meta_date'] ) ) ) . '</span>' ) )
-									: '';
-								// phpcs:enable
-
-								$date_separator = ( ( 'on' === $args['show_author'] || 'on' === $args['show_date'] ) && 'on' === $args['show_categories'] )
-									? ' | '
-									: '';
-
 								$author = 'on' === $args['show_author']
 									? et_get_safe_localization( sprintf( __( 'by %s', 'et_builder' ), '<span class="author vcard">' . et_pb_get_the_author_posts_link() . '</span>' ) )
 									: '';
@@ -1011,7 +1001,14 @@ class custom_ET_Builder_Module_Blog extends ET_Builder_Module_Type_PostBased {
 									: '';
 
 								// phpcs:disable WordPress.WP.I18n.NoEmptyStrings -- intentionally used.
-								
+								$date = 'on' === $args['show_date']
+									? et_get_safe_localization( sprintf( __( '%s', 'et_builder' ), '<span class="published">' . esc_html( get_the_date( str_replace( '\\\\', '\\', $args['meta_date'] ) ) ) . '</span>' ) )
+									: '';
+								// phpcs:enable
+
+								$date_separator = ( ( 'on' === $args['show_author'] || 'on' === $args['show_date'] ) && 'on' === $args['show_categories'] )
+									? ' | '
+									: '';
 
 								$categories = 'on' === $args['show_categories']
 									? et_builder_get_the_term_list( ', ' )
@@ -1979,12 +1976,12 @@ class custom_ET_Builder_Module_Blog extends ET_Builder_Module_Type_PostBased {
 
 			$post_meta_datas = array();
 
-			if ( isset( $post_meta_remove_keys['show_author'] ) ) {
-				$post_meta_datas[] = et_get_safe_localization( sprintf( __( 'by %s', 'et_builder' ), '<span class="author vcard">' . et_pb_get_the_author_posts_link() . '</span>' ) );
-			}
+			// if ( isset( $post_meta_remove_keys['show_author'] ) ) {
+			// 	$post_meta_datas[] = et_get_safe_localization( sprintf( __( 'by %s', 'et_builder' ), '<span class="author vcard">' . et_pb_get_the_author_posts_link() . '</span>' ) );
+			// }
 
 			if ( isset( $post_meta_remove_keys['show_date'] ) ) {
-				$post_meta_datas[] = et_get_safe_localization( sprintf( __( '%s', 'et_builder' ), '<span class="published">' . esc_html( get_the_date( $this->props['meta_date'] ) ) . '</span>' ) );
+				$post_meta_datas[] = et_get_safe_localization( sprintf( __( '%s', 'et_builder' ), '<span class="published">Posted on ' . esc_html( get_the_date( $this->props['meta_date'] ) ) . ' in </span> ' ) );
 			}
 
 			if ( isset( $post_meta_remove_keys['show_categories'] ) ) {
@@ -1992,10 +1989,10 @@ class custom_ET_Builder_Module_Blog extends ET_Builder_Module_Type_PostBased {
 			}
 
 			if ( isset( $post_meta_remove_keys['show_comments'] ) ) {
-				$post_meta_datas[] = sprintf( esc_html( _nx( '%s Comment', '%s Comments', get_comments_number(), 'number of comments', 'et_builder' ) ), number_format_i18n( get_comments_number() ) );
+				$post_meta_datas[] = sprintf( esc_html( _nx( ' | %s comment', ' | %s comments', get_comments_number(), 'number of comments', 'et_builder' ) ), number_format_i18n( get_comments_number() ) );
 			}
 
-			$raw_value = implode( ' | ', $post_meta_datas );
+			$raw_value = implode( '  ', $post_meta_datas );
 		}
 
 		return $raw_value;

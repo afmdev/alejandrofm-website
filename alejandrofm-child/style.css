@@ -1,76 +1,60 @@
-/*
- Theme Name:     alejandro-child
- Theme URI:      https://www.alejandrofm.com
- Description:    Alejandro Child Theme
- Author:         Alejandro Francisco Marrero
- Author URI:     https://www.alejandrofm.com.com
- Template:       Divi
- Version:        1.0.2
-*/
-
-
-/* =Theme customization starts here
-------------------------------------------------------- */
-
-
 body .et_pb_button {
-	padding: 10px 30px;
 	font-weight: 300;
+	padding: 10px 30px
 }
-
-/* header#main-header {
-	box-shadow: 0 7px 20px 0px #0000000a;
-} */
-
 
 span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
 	background: #00000014;
 	border-radius: 60px;
-	width: 41px;
 	height: 41px;
-	padding: 5px 0px 0px 5px;
+	padding: 5px 0 0 5px;
+	width: 41px
 }
 
 .mobile_menu_bar:after,
 .mobile_menu_bar:before,
 .et_toggle_slide_menu:after {
-	color: #222222 !important;
+	color: #222 !important
 }
 
 .et_pb_menu__wrap,
 .et_pb_menu__menu {
-	display: none !important;
+	display: none !important
 }
 
 .scroll-images p img {
-	width: 500px;
 	border-radius: 10px;
 	margin-right: 20px;
+	width: 500px
 }
 
 .moove-gdpr-branding-cnt {
-	display: none;
+	display: none
 }
 
 .badge {
-	text-transform: uppercase;
-	font-variation-settings: 'wght' 800;
-	font-size: 10px;
-	padding: 3px 5px;
 	border-radius: 4px;
+	font-size: 10px;
+	font-variation-settings: wght 800;
+	font-weight: 700;
 	letter-spacing: .05em;
-	vertical-align: middle;
-	font-weight: bold;
+	padding: 3px 5px;
+	text-transform: uppercase;
+	vertical-align: middle
 }
 
 .badge-magenta {
 	background-color: #FFE5F4;
+	background-color: #FFE5F4;
 	color: #CC0078;
+	color: #CC0078
 }
 
 .badge-aqua {
 	background-color: #C7F5EB;
+	background-color: #C7F5EB;
 	color: #0E8161;
+	color: #0E8161
 }
 
 .badge-success {
@@ -88,68 +72,50 @@ span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
 	color: #5f5207
 }
 
-.badge-magenta {
-	background-color: #FFE5F4;
-	color: #CC0078
-}
-
 .badge-green {
 	background-color: #CFF6CC;
 	color: #0B9200
 }
 
-.badge-aqua {
-	background-color: #C7F5EB;
-	color: #0E8161
-}
-
-
 .btn-sidebyside .et_pb_button_module_wrapper,
 .btn-sidebyside .et_pb_text {
-	display: inline-block;
+	display: inline-block
 }
 
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon,
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton {
-	border: 2px solid #1743df;
+	border: 2px solid #1743df
 }
 
-
 .link {
+	cursor: pointer !important;
 	display: inline-block;
 	text-decoration: none;
-	cursor: pointer !important;
 	transition: color .1s
 }
 
 .et-l--footer ul {
-	padding: 0;
+	padding: 0
 }
 
-
-
-/* Grandient Animation h2 (Home Title)*/
-
 .grandient.two h2 span {
-	font-weight: 900;
+	font-weight: 900
 }
 
 .grandient h2 span {
-	display: inline-block;
+	-moz-animation: Gradient 5s ease infinite !important;
+	-webkit-animation: Gradient 5s ease infinite !important;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: Gradient 5s ease infinite !important;
+	background-clip: text;
 	background-image: linear-gradient(-45deg, #1743df, #994fdd, #e15594, #00ffb2) !important;
 	background-size: 300% !important;
-	background-clip: text;
-	-webkit-background-clip: text;
-	text-fill-color: transparent;
-	-webkit-text-fill-color: transparent;
-	-webkit-animation: Gradient 5s ease infinite !important;
-	-moz-animation: Gradient 5s ease infinite !important;
-	animation: Gradient 5s ease infinite !important;
+	display: inline-block;
 	font-weight: 600;
+	text-fill-color: transparent
 }
-
-
 
 #inner-page p a,
 .autor a,
@@ -158,14 +124,13 @@ span.mobile_menu_bar.et_pb_header_toggle.et_toggle_slide_menu {
 a.comment-edit-link,
 .single-post .post-content a {
 	background-image: linear-gradient(120deg, #ff5ba7 0%, #ff5ba7 100%);
+	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-size: 100% 2px;
-	background-position: 0 100%;
-	transition: background-size 0.25s ease-in-out;
 	color: inherit !important;
 	font-weight: 400;
+	transition: background-size .25s ease-in-out
 }
-
 
 #inner-page p a:hover,
 .autor a:hover,
@@ -174,149 +139,130 @@ a.comment-edit-link,
 a.comment-edit-link:hover,
 .single-post .post-content a:hover {
 	background-size: 100% 100%;
-	color: #ffffff !important;
-	transition: ease all .3s;
 	border-bottom: 0 !important;
+	color: #fff !important;
+	transition: ease all .3s
 }
 
 #pot {
-	bottom: 15%;
-	position: absolute;
 	-webkit-animation: linear infinite;
-	-webkit-animation-name: run;
 	-webkit-animation-duration: 200s;
+	-webkit-animation-name: run;
+	bottom: 15%;
+	position: absolute
 }
 
-
-
 .sue-highlight-text-uno {
-	text-decoration: none;
 	box-shadow: inset 0 -.5em 0 #feeb8e;
 	color: inherit;
+	text-decoration: none
 }
 
 .sue-highlight-text-dos {
-	text-decoration: none;
 	box-shadow: inset 0 -.5em 0 #d0e2ff;
 	color: inherit;
+	text-decoration: none
 }
 
 .sue-highlight-text-tres {
-	text-decoration: none;
 	box-shadow: inset 0 -.5em 0 #bff3f1;
 	color: inherit;
+	text-decoration: none
 }
 
 .sue-highlight-text-cuatro {
-	text-decoration: none;
 	box-shadow: inset 0 -.5em 0 #fff4c0;
 	color: inherit;
+	text-decoration: none
 }
 
-
 .marquee {
-	position: relative;
-	width: 100vw;
-	max-width: 100%;
-	height: 150px;
-	overflow-x: hidden;
 	font-family: 'Poppins';
+	height: 150px;
+	max-width: 100%;
+	overflow-x: hidden;
 	padding-top: 35px;
+	position: relative;
+	width: 100vw
 }
 
 .slow-lane {
+	animation: marquee 200s linear infinite;
 	position: absolute;
 	white-space: nowrap;
-	will-change: transform;
-	animation: marquee 200s linear infinite;
-}
-
-
-
-.home .dica-container .et_pb_button_wrapper {
-	margin-top: 30px !important;
+	will-change: transform
 }
 
 .home .dica-image-container span img {
-	border-radius: 10px;
+	border-radius: 10px
 }
 
-
 .swiper-pagination-bullet {
-	width: 15px !important;
 	height: 15px !important;
 	margin: 15px 0 !important;
+	width: 15px !important
 }
 
 .dica_divi_carousel .swiper-pagination-bullet {
-	margin-right: 15px !important;
+	margin-right: 15px !important
 }
 
 .swiper-pagination.dica-paination-1.swiper-pagination-clickable.swiper-pagination-bullets span:last-child {
-	margin-right: 0px !important;
+	margin-right: 0 !important
 }
-
 
 .alejandro-cv span img {
-	height: 175vh !important;
+	height: 175vh !important
 }
-
-
-
-/* Contact Form Styles */
 
 .dvppl_cf7_styler_0 .dipe-cf7 .wpcf7-acceptance input[type="checkbox"]+span:before,
 .dvppl_cf7_styler_0 .dipe-cf7 .wpcf7-checkbox input[type="checkbox"]+span:before {
-	background-color: #f5f5f500 !important;
+	background-color: #f5f5f500 !important
 }
 
-
 span.wpcf7-not-valid-tip {
-	color: #ff0000;
+	color: red;
 	font-size: 12px;
-	font-weight: 300;
+	font-weight: 300
 }
 
 .wpcf7-list-item {
 	display: inline-block;
-	margin: 0 0 0 0;
 	line-height: 15px;
+	margin: 0
 }
 
 #alles span.wpcf7-not-valid-tip,
 #right span.wpcf7-not-valid-tip,
 #left span.wpcf7-not-valid-tip {
-	margin-bottom: -29px;
+	margin-bottom: -29px
 }
 
 #alles label span,
 #right label span,
 #left label span {
-	color: #ff0000;
-	font-weight: 300;
+	color: red;
+	font-weight: 300
 }
 
 span.wpcf7-list-item-label {
-	font-weight: 300;
 	font-size: 12px;
-}
-
-input.wpcf7-form-control.has-spinner.wpcf7-submit {
-	margin-top: 30px !important;
+	font-weight: 300
 }
 
 body #page-container .et_pb_section .dvppl_cf7_styler_0 .wpcf7-form input[type=submit] {
+	box-shadow: 0 6px 3px 0 #00000005;
 	font-weight: 300;
-	box-shadow: 0px 6px 3px 0px #00000005;
+	width: 100%
 }
 
 body #page-container .et_pb_section .dvppl_cf7_styler_0 .wpcf7-form input[type=submit]:hover {
-	background: white !important;
-	color: #1743DF;
+	background: #fff !important;
+	color: #1743DF
 }
 
 .dvppl_cf7_styler_0 {
-	padding-bottom: 0 !important;
+	padding-bottom: 0 !important
 }
 
 input.text,
@@ -328,85 +274,78 @@ input[type=text],
 select,
 textarea {
 	border: 1px solid #fff;
-	color: #4e4e4e;
-	box-shadow: 0px 6px 3px 0px #00000005;
+	box-shadow: 0 6px 3px 0 #00000005;
+	color: #4e4e4e
 }
 
 .wpcf7-spinner {
 	display: flex;
-	padding: 15px;
 	margin: 0 auto;
-	position: relative;
-	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 15px;
+	position: relative
 }
 
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output,
 .wpcf7 form.payment-required .wpcf7-response-output {
-	border-color: #ffb900;
-	font-size: 13px;
-	border-radius: 100px;
 	background: #ffb90038;
-	text-align: center !important;
+	border-color: #ffb900;
+	border-radius: 100px;
+	font-size: 13px;
+	text-align: center !important
 }
 
 .wpcf7 form.sent .wpcf7-response-output {
-	border-color: #46b450;
 	background: #46b45066;
-	font-size: 13px;
-	text-align: center !important;
+	border-color: #46b450;
 	border-radius: 100px;
+	font-size: 13px;
+	text-align: center !important
 }
-
-body #page-container .et_pb_section .dvppl_cf7_styler_0 .wpcf7-form input[type=submit] {
-	width: 100%;
-}
-
 
 textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
-	border-radius: 20px !important;
+	border-radius: 20px !important
 }
 
-
 #alles {
-	width: 100%;
 	margin-bottom: 30px !important;
 	margin-top: 10px;
+	width: 100%
 }
 
 #left {
-	width: 49%;
 	float: left;
 	margin-right: 2%;
 	margin-top: 10px;
+	width: 49%
 }
 
 #right {
-	width: 49%;
 	float: left;
 	margin-top: 10px;
+	width: 49%
 }
 
 .clearfix:after {
+	clear: both;
 	content: "\0020";
 	display: block;
 	height: 0;
-	clear: both;
-	visibility: hidden;
-	overflow: hidden;
 	margin-bottom: 10px;
+	overflow: hidden;
+	visibility: hidden
 }
 
 .clearfix {
-	display: block;
+	display: block
 }
 
-
 .et_pb_posts .et_pb_post {
-	position: relative;
 	background: #fff !important;
 	border-radius: 10px !important;
+	position: relative
 }
 
 .et_pb_post .post-meta {
@@ -416,417 +355,386 @@ textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
 .et_pb_posts .et_pb_post h2,
 .et_pb_posts .et_pb_post .post-meta,
 .et_pb_posts .et_pb_post .post-content {
-	padding: 0px 30px;
+	padding: 0 30px
 }
 
 a.more-link {
-	width: 165px;
-	text-align: center;
-	color: white;
-	margin-top: 10px;
-	margin-top: 25px;
-	margin-bottom: 30px;
 	background-color: #1743df;
 	border: 2px solid #1743df;
 	border-radius: 50px;
-	letter-spacing: -1px;
-	transition: all 300ms ease 0ms;
-	padding: 11px 5px;
+	color: #fff;
 	font-weight: 200;
+	letter-spacing: -1px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-top: 25px;
+	padding: 11px 5px;
+	text-align: center;
 	text-transform: capitalize;
+	transition: all 300ms ease 0ms;
+	width: 165px
 }
 
 .column.size-1of3 article,
 .column.size-1of2 article,
 .column.size-1of1 article {
-	transition: all 300ms ease 0ms;
+	transition: all 300ms ease 0ms
 }
 
 .column.size-1of3 article:hover,
 .column.size-1of2 article:hover,
 .column.size-1of1 article:hover {
-	box-shadow: 0 20px 30px -10px rgb(9 30 67 / 30%);
+	box-shadow: 0 20px 30px -10px #170000
 }
 
 a.more-link:hover {
-	color: #1743df;
-	background-color: #ffffff;
+	background-color: #fff;
 	border: 2px solid #1743df;
+	color: #1743df
 }
 
 .blog-top-bar {
-	width: 100%;
 	height: 20px;
+	width: 100%
 }
 
 .blog-top-bar .sharing {
-	float: left;
+	float: left
 }
 
 .blog-top-bar .views {
-	display: flex;
-	float: right;
 	align-items: flex-end;
-
+	display: flex;
+	float: right
 }
 
 .blog .post img {
-	transition: all 500ms ease 0ms;
+	transition: all 500ms ease 0ms
 }
 
 .blog-separator {
-	width: 100%;
-	height: 1px;
 	background-color: #d7d7d7;
+	height: 1px;
 	margin-top: -7px;
+	width: 100%
 }
 
 .post:hover .blog-image {
-	transform: scale(1.05);
+	transform: scale(1.05)
 }
 
 .single-post h1.entry-title {
 	font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif;
 	font-weight: 900;
-	line-height: 75px;
 	letter-spacing: -2px;
+	line-height: 75px
 }
 
 .single-post .et_post_meta_wrapper img {
-	border-radius: 20px;
+	border-radius: 20px
 }
 
 .single-post .entry-content p {
-	font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
-	font-size: 22px;
-	line-height: 40px;
-	font-weight: 300;
-	color: #222222;
+	color: #222;
+	font: 300 22px/40px 'Roboto', Helvetica, Arial, Lucida, sans-serif
 }
 
 p.logged-in-as,
 p.comment-notes,
 p.comment-form-cookies-consent label {
-	font-weight: 300;
 	font-size: 14px;
+	font-weight: 300
 }
 
 a.comment-edit-link {
-	font-size: 14px;
+	font-size: 14px
 }
 
 h1#comments {
-	margin-bottom: 20px;
+	margin-bottom: 20px
 }
 
 .comment-body {
-	margin-bottom: -10px;
+	margin-bottom: -10px
 }
 
 #respond {
-	padding-top: 50px;
+	padding-top: 50px
 }
 
 span.nav-next a,
 span.nav-previous a {
 	background: #1743df !important;
-	color: #F2F2F2;
-	padding: 0px 20px;
-	border-radius: 80px;
-	font-size: 14px;
 	border: 2px solid #1743df;
-	transition: all 300ms ease 0ms;
+	border-radius: 80px;
+	color: #F2F2F2;
+	font-size: 14px;
+	padding: 0 20px;
+	transition: all 300ms ease 0ms
 }
 
 span.nav-next a:hover,
 span.nav-previous a:hover {
 	background: #F2F2F2 !important;
 	border: 2px solid #1743df;
-	color: #1743df;
+	color: #1743df
 }
 
 a.buy-me-coffee img {
-	width: 14px !important;
-	padding: 3px 0px 0px 0 !important;
 	margin-left: 12px !important;
+	padding: 3px 0 0 !important;
+	width: 14px !important
 }
 
 a.buy-me-coffee img:hover {
 	animation: shake 1s ease 0s 1 normal both;
-	transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
 }
 
 .post-views.content-post.post-528.entry-meta {
-	color: #cc0000;
-	font-weight: 300;
+	color: #c00;
 	font-size: 16px;
-
+	font-weight: 300
 }
 
 .views span {
-	color: #cc0000;
-	font-weight: 300;
+	color: #c00;
 	font-size: 14px;
-	margin-left: 4px;
+	font-weight: 300;
+	margin-left: 4px
 }
 
 .post-views.entry-meta>span.post-views-icon.dashicons {
-	margin-top: 1px;
+	margin-top: 1px
 }
 
 span.post-views-count {
-	margin: 0 0 0 -3px;
+	margin: 0 0 0 -3px
 }
 
 .blog-categories span a {
 	background: #df1798;
+	border: 1px solid #df1798;
 	border-radius: 4px;
-	padding: 2px 5px;
+	color: #fff;
 	font-size: 11px;
 	font-weight: 400;
-	color: #fff;
-	border: 1px solid #df1798;
-	transition: all 300ms ease 0ms;
+	padding: 2px 5px;
+	transition: all 300ms ease 0ms
 }
 
 .blog-categories span a:hover {
 	background: #F2F2F2;
-	color: #df1798;
 	border: 1px solid #df1798;
+	color: #df1798
 }
 
 .simplesocial-simple-icons button.ssb_fbshare-icon {
-	padding: 0px 8px 0 3px !important;
 	border-radius: 4px !important;
+	padding: 0 8px 0 3px !important
 }
 
 .simplesocial-simple-icons button.ssb_print-icon,
 .simplesocial-simple-icons button.ssb_email-icon,
 .simplesocial-simple-icons button.ssb_whatsapp-icon,
 .simplesocial-simple-icons button.ssb_tweet-icon {
-	padding: 0px 8px 0 7px !important;
 	border-radius: 4px !important;
+	padding: 0 8px 0 7px !important
 }
 
 .simplesocial-simple-icons button.ssb_print-icon .icon,
 .simplesocial-simple-icons button.ssb_email-icon .icon,
 .simplesocial-simple-icons button.ssb_whatsapp-icon .icon {
-	left: 6px !important;
+	left: 6px !important
 }
 
 .simplesocial-simple-icons button.ssb_linkedin-icon .simplesocialtxt {
-	padding: 0 7px 0 22px !important;
+	padding: 0 7px 0 22px !important
 }
 
-/* Animation Keyframes */
+.home .dica-container .et_pb_button_wrapper,
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+	margin-top: 30px !important
+}
 
 @keyframes shake {
 
 	0%,
 	100% {
 		transform: rotate(0deg);
-		transform-origin: 50% 100%;
-	}
-
-	10% {
-		transform: rotate(2deg);
+		transform-origin: 50% 100%
 	}
 
 	20%,
 	40%,
 	60% {
-		transform: rotate(-4deg);
+		transform: rotate(-4deg)
 	}
 
 	30%,
 	50%,
 	70% {
-		transform: rotate(4deg);
+		transform: rotate(4deg)
 	}
 
 	80% {
-		transform: rotate(-2deg);
+		transform: rotate(-2deg)
 	}
 
+	10%,
 	90% {
-		transform: rotate(2deg);
+		transform: rotate(2deg)
 	}
 }
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-
 	50% {
 		background-position: 100% 50%
 	}
 
+	0%,
 	100% {
-		background-position: 0% 50%
+		background-position: 0 50%
 	}
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-
 	50% {
 		background-position: 100% 50%
 	}
 
+	0%,
 	100% {
-		background-position: 0% 50%
+		background-position: 0 50%
 	}
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-
 	50% {
 		background-position: 100% 50%
 	}
 
+	0%,
 	100% {
-		background-position: 0% 50%
+		background-position: 0 50%
 	}
 }
 
 @keyframes run {
-	0% {
-		left: 0;
-	}
-
 	50% {
-		left: calc(100% - 100px);
+		left: calc(100% - 100px)
 	}
 
+	0%,
 	100% {
-		left: 0;
+		left: 0
 	}
 }
 
 @keyframes marquee {
 	from {
-		transform: translateX(0);
+		transform: translateX(0)
 	}
 
 	to {
-		transform: translateX(-50%);
+		transform: translateX(-50%)
 	}
 }
 
-
-
-/* Media Queries */
 @media (max-width: 1500px) {
 	.alejandro-cv span img {
-		height: 130vh !important;
+		height: 130vh !important
 	}
 }
-
 
 @media (max-width: 1300px) {
 	.alejandro-cv span img {
-		height: 130vh !important;
+		height: 130vh !important
 	}
 }
 
-
 @media (max-width: 1200px) {
 	.alejandro-cv span img {
-		height: 110vh !important;
+		height: 110vh !important
 	}
 }
 
 @media (max-width: 980px) {
 	.scroll-images p img {
-		width: 400px;
 		border-radius: 10px;
 		margin-right: 20px;
+		width: 400px
 	}
 
 	.alejandro-cv span img {
-		height: 100vh !important;
+		height: 100vh !important
 	}
 }
 
 @media (max-width: 768px) {
 	.scroll-images p img {
-		width: 250px;
 		border-radius: 10px;
 		margin-right: 20px;
+		width: 250px
 	}
 
 	.alejandro-cv span img {
-		height: 85vh !important;
-	}
-
-	#left {
-		width: 100%;
-	}
-
-	#right {
-		width: 100%;
+		height: 85vh !important
 	}
 
 	button.ssb_print-icon.simplesocial-email-share,
 	button.ssb_whatsapp-icon.simplesocial-whatsapp-share {
 		display: none
 	}
-}
 
-
-@media (max-width: 600px) {
-
-	.alejandro-cv span img {
-		height: 65vh !important;
+	#left,
+	#right {
+		width: 100%
 	}
 }
 
+@media (max-width: 600px) {
+	.alejandro-cv span img {
+		height: 65vh !important
+	}
+}
 
 @media (max-width: 580px) {
-
-
 	button.ssb_linkedin-icon {
 		display: none
 	}
 }
 
 @media (max-width: 450px) {
-
 	button.ssb_email-icon.simplesocial-email-share {
-		display: none;
+		display: none
 	}
 }
 
 @media (max-width: 400px) {
 	.swiper-pagination-bullet {
-		width: 15px !important;
 		height: 15px !important;
 		margin: 15px 0 !important;
+		width: 15px !important
 	}
 
 	.dica_divi_carousel .swiper-pagination-bullet {
-		margin-right: 15px !important;
+		margin-right: 15px !important
 	}
 
 	.alejandro-cv span img {
-		height: 45vh !important;
+		height: 45vh !important
 	}
 }
 
 @media (max-width: 320px) {
 	.swiper-pagination-bullet {
-		width: 12px !important;
 		height: 12px !important;
 		margin: 15px 0 !important;
+		width: 12px !important
 	}
 
 	.dica_divi_carousel .swiper-pagination-bullet {
-		margin-right: 15px !important;
+		margin-right: 15px !important
 	}
 }

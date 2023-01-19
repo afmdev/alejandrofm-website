@@ -44,3 +44,25 @@ function unset_url_field($fields){
 }
 
 add_filter(‘comment_form_field_url’, ‘__return_false’);
+
+
+add_action('wp_print_scripts', function () {
+    global $post;
+    if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
+        wp_dequeue_script( 'google-recaptcha' );
+        wp_dequeue_script( 'wpcf7-recaptcha' );
+    }
+});
+
+// Remove dashicons in frontend for unauthenticated users
+add_action( 'wp_enqueue_scripts', 'bs_dequeue_dashicons' );
+function bs_dequeue_dashicons() {
+    if ( ! is_user_logged_in() ) {
+        wp_deregister_style( 'dashicons' );
+    }
+}
+
+function new_meta_viewport() {
+echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">';
+}
+add_action( 'wp_head', 'new_meta_viewport', 1 );
