@@ -22,6 +22,7 @@ add_shortcode( 'et_pb_blog', array( $dcfm, '_shortcode_callback' ) ); }
 add_action( 'et_builder_ready', 'divi_custom_blog_module' ); 
 
 function divi_custom_blog_class( $classlist ) { 
+    
 // Blog Module 'classname' overwrite. 
 $classlist['et_pb_blog'] = array( 'classname' => 'custom_ET_Builder_Module_Blog',); 
 return $classlist; 
@@ -46,13 +47,9 @@ function unset_url_field($fields){
 add_filter(‘comment_form_field_url’, ‘__return_false’);
 
 
-add_action('wp_print_scripts', function () {
-    global $post;
-    if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
-        wp_dequeue_script( 'google-recaptcha' );
-        wp_dequeue_script( 'wpcf7-recaptcha' );
-    }
-});
+
+
+
 
 // Remove dashicons in frontend for unauthenticated users
 add_action( 'wp_enqueue_scripts', 'bs_dequeue_dashicons' );
@@ -62,7 +59,30 @@ function bs_dequeue_dashicons() {
     }
 }
 
-function new_meta_viewport() {
-echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">';
+
+
+//Fix problem google pagespeed maximun-scale
+function remove_my_action() {
+remove_action('wp_head', 'et_add_viewport_meta');
 }
-add_action( 'wp_head', 'new_meta_viewport', 1 );
+function custom_et_add_viewport_meta(){
+echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1" />';
+}
+add_action( 'init', 'remove_my_action');
+add_action( 'wp_head', 'custom_et_add_viewport_meta' );
+
+
+//Remove Recaptcha all site except contact page
+function block_recaptcha_badge() {
+  if ( !is_page( array( 'contact' ) ) ) {
+    wp_dequeue_script( 'google-recaptcha' );
+    wp_deregister_script( 'google-recaptcha' );
+    add_filter( 'wpcf7_load_js', '__return_false' );
+    add_filter( 'wpcf7_load_css', '__return_false' );
+  }
+}
+add_action( 'wp_print_scripts', 'block_recaptcha_badge' );
+
+
+
+
