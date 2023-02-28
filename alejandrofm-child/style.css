@@ -100,6 +100,7 @@ div#toc-right ul li {
 
 .single-post .et_pb_post_content_0_tb_body ul {
 	padding-left: 0px !important;
+	padding: 0 0 23px 0 !important;
 }
 
 .et_pb_post_content_0_tb_body ul li {
@@ -575,6 +576,11 @@ div#toc-right ul li a {
 
 .single-post h2 {
 	margin-top: 40px !important;
+	margin-bottom: 15px !important;
+}
+
+.single-post .wp-caption {
+	margin-bottom: 22px !important;
 }
 
 p.comment-form-cookies-consent label,
