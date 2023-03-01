@@ -98,6 +98,10 @@ div#toc-right ul li {
 	margin-top: 0.5em;
 }
 
+p:not(.has-background):last-of-type {
+	padding-bottom: 22px !important;
+}
+
 .single-post .et_pb_post_content_0_tb_body ul {
 	padding-left: 0px !important;
 	padding: 0 0 23px 0 !important;
