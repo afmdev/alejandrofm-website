@@ -884,7 +884,7 @@ ul#mobile_menu_slide li a {
 }
 
 ul#mobile_menu_slide li.current-menu-item a {
-	font-weight: 500 !important !important;
+	font-weight: 500 !important;
 	text-decoration: underline !important;
 }
 
